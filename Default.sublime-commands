@@ -1,0 +1,20 @@
+[
+    {
+        "caption": "ContextTools: Number Selections",
+        "command": "context_number_selections"
+    },
+    {
+        "caption": "ContextTools: Find to BOF",
+        "command": "context_find_to",
+        "args": {"to": "bof"}
+    },
+    {
+        "caption": "ContextTools: Find to EOF",
+        "command": "context_find_to",
+        "args": {"to": "eof"}
+    },
+    {
+        "caption": "ContextTools: Remove Comments",
+        "command": "context_remove_comment"
+    }
+]
