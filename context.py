@@ -116,7 +116,7 @@ class OpenTerminalHereCommand(SystemOpenWith):
 class SystemOpenWithCommand(SystemOpenWith):
     def run(self, edit):
         if sublime.platform() == "windows":
-            command = "%%SystemRoot%%\\system32\\OpenWith.exe %s"
+            command = '%%SystemRoot%%\\system32\\OpenWith.exe "%s"'
             os.popen(command % self.view.file_name())
         elif sublime.platform() == "osx":
             subprocess.call(["open", self.view.file_name()])
