@@ -6,17 +6,11 @@
     },
 	{"id": "file" },
 	{
-        "platform": "Windows",
 		"caption": "Open With",
-		"command": "system_open_with"
+		"command": "open_with"
 	},
-    {
-        "platform": "OSX",
-        "caption": "Open With",
-        "command": "system_open_with"
-    },
 	{
 		"caption": "Open With Default Application",
-		"command": "system_open_with_default_application"
+		"command": "open_with_default_application"
 	}
 ]

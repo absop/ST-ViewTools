@@ -1,6 +1,0 @@
-[
-    { "keys": ["ctrl+k", "ctrl+b"], "command": "context_delete_to", "args": {"to": "bof"} },
-    { "keys": ["ctrl+k", "ctrl+e"], "command": "context_delete_to", "args": {"to": "eof"} },
-    { "keys": ["ctrl+alt+shift+0"], "command": "context_number_selections", "args": {"initial": 1} },
-    { "keys": ["ctrl+alt+o"], "command": "system_open_with"}
-]

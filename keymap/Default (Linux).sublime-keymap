@@ -1,0 +1,21 @@
+[
+    {
+        "keys": ["ctrl+k", "ctrl+b"],
+        "command": "delete_to",
+        "args": {"to": "bof"}
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+e"],
+        "command": "delete_to",
+        "args": {"to": "eof"}
+    },
+    {
+        "keys": ["ctrl+alt+shift+0"],
+        "command": "number_selections",
+        "args": {"initial": 1}
+    },
+    {
+        "keys": ["ctrl+alt+o"],
+        "command": "open_with"
+    }
+]
