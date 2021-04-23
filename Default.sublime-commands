@@ -4,6 +4,10 @@
         "command": "number_selections"
     },
     {
+        "caption": "ViewTools: Find All Under All",
+        "command": "find_all_under_all"
+    },
+    {
         "caption": "ViewTools: Find to BOF",
         "command": "find_to",
         "args": {"to": "bof"}

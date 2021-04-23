@@ -15,3 +15,13 @@ class FindToCommand(sublime_plugin.TextCommand):
 
         regions = filter(compare, self.view.find_all(pattern))
         self.view.sel().add_all(regions)
+
+
+class FindAllUnderAllCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        view = self.view
+        words = set(view.substr(view.word(r)) for r in view.sel())
+        if words:
+            pattern = "|".join(words)
+            regions = view.find_all(pattern)
+            view.sel().add_all(regions)
