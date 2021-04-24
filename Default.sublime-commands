@@ -4,6 +4,10 @@
         "command": "number_selections"
     },
     {
+        "caption": "ViewTools: Count Occurrence",
+        "command": "count_occurrence"
+    },
+    {
         "caption": "ViewTools: Find All Under All",
         "command": "find_all_under_all"
     },

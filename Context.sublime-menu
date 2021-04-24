@@ -4,7 +4,12 @@
         "caption": "Open Terminal Here",
         "command": "open_terminal_here"
     },
-	{"id": "file" },
+    { "caption": "-", "id": "selection" },
+    {
+    	"caption": "Count Occurrence",
+    	"command": "count_occurrence"
+    },
+	{ "caption": "-", "id": "file" },
 	{
 		"caption": "Open With",
 		"command": "open_with"

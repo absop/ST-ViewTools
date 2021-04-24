@@ -25,3 +25,15 @@ class FindAllUnderAllCommand(sublime_plugin.TextCommand):
             pattern = "|".join(words)
             regions = view.find_all(pattern)
             view.sel().add_all(regions)
+
+
+# To find whether a symbol is referenced in this view or not
+# Consider to show info by popup menu
+class CountOccurrenceCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        view = self.view
+        if view.sel():
+            word = view.substr(view.word(view.sel()[0]))
+            occu = len(view.find_all(word))
+            show = "Occur{%s: %d}" % (word, occu)
+            view.window().status_message(show)
