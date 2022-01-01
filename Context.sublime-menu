@@ -6,16 +6,7 @@
     },
     { "caption": "-", "id": "selection" },
     {
-    	"caption": "Count Occurrence",
-    	"command": "count_occurrence"
-    },
-	{ "caption": "-", "id": "file" },
-	{
-		"caption": "Open With",
-		"command": "open_with"
-	},
-	{
-		"caption": "Open With Default Application",
-		"command": "open_with_default_application"
-	}
+        "caption": "Count Occurrence",
+        "command": "count_occurrence"
+    }
 ]
