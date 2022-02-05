@@ -24,5 +24,9 @@
     {
         "caption": "ViewTools: Remove Comments",
         "command": "remove_comment"
+    },
+    {
+        "caption": "ViewTools: Are All Selections Visible",
+        "command": "are_all_selections_visible"
     }
 ]

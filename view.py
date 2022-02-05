@@ -48,3 +48,18 @@ class CountOccurrenceCommand(sublime_plugin.TextCommand):
             occu = len(view.find_all(word))
             show = "Occur{%s: %d}" % (word, occu)
             view.window().status_message(show)
+
+
+class AreAllSelectionsVisibleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        selections = self.view.sel()
+        visible_region = self.view.visible_region()
+        try:
+            if (visible_region.contains(selections[0]) and
+                visible_region.contains(selections[-1])):
+                answer = 'Yes'
+            else:
+                answer = 'No'
+            sublime.message_dialog(12 * ' ' + answer)
+        except:
+            pass
